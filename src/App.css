@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.email-submission-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #000000; /* Specify the desired background color */
+  transform: translateY(300px);
+  padding: 10px;
+  width: 600px; /* Specify the desired width */
+
+  margin: 0 auto; /* Center the container horizontally */
+  border-radius: 2px;
+  border: 1px solid rgb(158, 148, 129);
 }
 
-.App-link {
-  color: #61dafb;
+.email-input-container {
+  flex-grow: 1;
+  padding-right: 10px;
+  border-right: 1px solid #ffffff; /* Specify the color for the separator line */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email-input {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  background-color: transparent;
+  color: #ffffff; /* Specify the desired text color for the email field */
+  border: none;
+  outline: none;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.submit-button {
+  background-color: transparent;
+  color: #ffffff; /* Specify the desired text color for the submit button */
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.logo {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 86px;
+  transform: translateY(200px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bypass-container {
+  position: absolute;
+  top: 20px; /* Specify the desired distance from the top of the page */
+  right: 20px; /* Specify the desired distance from the right side of the page */
+  padding: 10px 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000000; /* Specify the desired text color */
+  background-color: transparent;
+  border: 1px solid #000000; /* Specify the desired border color */
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bypass-container:hover {
+  background-color: #000000; /* Specify the desired background color on hover */
+  color: #ffffff; /* Specify the desired text color on hover */
 }
