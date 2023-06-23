@@ -69,3 +69,15 @@
   background-color: #000000; /* Specify the desired background color on hover */
   color: #ffffff; /* Specify the desired text color on hover */
 }
+
+.privacy-policy {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: #f1f1f1; */
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}

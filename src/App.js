@@ -10,11 +10,15 @@ function App() {
         <input
           type="email"
           className="email-input"
-          placeholder="Enter your email"
+          placeholder="Email Address"
         />
         <button className="submit-button">Submit</button>
       </div>
       <div className="bypass-container">Enter Using Password</div>
+      <div className="privacy-policy">
+        © 2023 Cloth Aesthetic Brand™. All rights reserved.{" "}
+        <a href="#">Privacy Policy.</a>
+      </div>
     </div>
   );
 }
