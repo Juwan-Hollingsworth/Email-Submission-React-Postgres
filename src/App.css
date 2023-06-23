@@ -1,3 +1,10 @@
+.App {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
 .email-submission-container {
   display: flex;
   align-items: center;
@@ -32,7 +39,7 @@
 
 .submit-button {
   background-color: transparent;
-  color: #ffffff; /* Specify the desired text color for the submit button */
+  color: #f5f5f5; /* Specify the desired text color for the submit button */
   padding: 5px 10px;
   font-size: 16px;
   border: none;
