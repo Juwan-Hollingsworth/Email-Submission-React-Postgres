@@ -1,7 +1,31 @@
 import logo from "./logo.svg";
 import "./App.css";
+import React, { useState } from "react";
 
 function App() {
+  //define default email values
+  const [email, setEmail] = useState("");
+  //handle submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/api/submit-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+      });
+
+      if (response.ok) {
+        alert("Email submitted sucessfully.");
+      } else {
+        alert("Error submitting email.");
+      }
+    } catch (error) {
+      console.error("Error during email submission:", error);
+      alert("Error");
+    }
+  };
+
   return (
     <div className="App">
       <div className="logo">cloth aesthetic.</div>
